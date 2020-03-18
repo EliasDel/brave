@@ -2,7 +2,7 @@ def gitpull():
     import dataiku
     import pandas as pd
     
-    client_data = dataiku.Dataset("Client_Data_Scored")
+    client_data = dataiku.Dataset("client_data_scored")
     client_df = client_data.get_dataframe()
     
     high_risk_df = client_df.loc[client_df['score'] == 1]
